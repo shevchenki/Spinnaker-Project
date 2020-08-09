@@ -3,5 +3,5 @@ WORKDIR /app
 ADD /server/ .
 RUN npm install -g nodemon
 RUN npm install
-EXPOSE 8080
+EXPOSE 3000
 CMD ["npm", "start"]
