@@ -1,7 +1,2 @@
-FROM node:alpine
-WORKDIR /app
-ADD /server/ .
-RUN npm install -g nodemon
-RUN npm install
-EXPOSE 3000
-CMD ["npm", "start"]
+FROM nginx:latest
+ADD ./nginx/ /etc/nginx/conf.d/
